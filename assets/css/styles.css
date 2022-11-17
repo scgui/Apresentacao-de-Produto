@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+ 
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+a.active,
+a:hover {
+    background-color: #586342;
+    transition: .5s;
+    color: #fff;
+}
+
+.checkbtn {
+    width: 20px;
+    font-size: 38px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+
+main .container {
+    background-image: url(../images/background.jpg);
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-vatapa {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-vatapa img {
+    height: 60%;
+    width: auto;
+    border-radius: 7px;
+    padding: 10px;
+    border: 3px solid #fff;
+}
+
+.div-text-vatapa {
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    align-items: center;
+}
+
+.div-text-vatapa h1 {
+    font-size: 65px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.div-text-vatapa p {
+    font-size: 30px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.box {
+    background-color: #F6EAD4;
+    padding: 15px;
+    border-radius: 23px;
+}
+
+footer .container {
+    height: 500px;
+    display: flex;
+}
+
+.widget {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.widget-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #F6EAD4;
+    width: 80%;
+    border-radius: 15px;
+    border: 2px dashed #586342;
+}
+
+.widget-box img {
+    width: 100px;
+    height: auto;
+}
+
+.widget-box h1 {
+    color: #586342;
+}
+
+.widget-box p {
+    width: 45%;
+}
+
+.widget p, h1 {
+    margin-top: 10px;
+}
+
+.copyright {
+    width: 100%;
+    height: 80px;
+    background-color: #594138;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.copyright p {
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1100px) {
+    main .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer .container {
+        height: auto;
+        margin: 20px 5px;
+    }
+
+    .div-vatapa img {
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .div-text-vatapa {
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 952px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label.logo {
+        font-size: 35px;
+        padding-left: 50px;
+    }
+    
+    main .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .div-vatapa img {
+        padding: 20px;
+    }
+    .div-text-vatapa {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    footer .container p {
+        width: 70%;
+    }
+
+    .widget {
+        height: 90%;
+        width: 60%;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #F6EAD4;
+    }
+
+    .div-vatapa img {
+        margin: 10px 20px;
+        width: 100%;
+    }
+
+    .widget {
+        width: 100%;
+    }
+
+    ul {
+        background-color: #F6EAD4;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        background-color: #F6EAD4;
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #fff;
+        background-color: #586342;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .container p {
+        font-size: 17px;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    nav label.logo {
+        padding: 0;
+        margin-left: 15px;
+    }
+}

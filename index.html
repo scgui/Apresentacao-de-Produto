@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/ba1384fb30.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".checkbtn").addEventListener("click", function(){
+                if(document.querySelector("nav ul").style.display == 'block') {
+                    document.querySelector("nav ul").style.display = 'none'
+                } else {
+                    document.querySelector("nav ul").style.display = 'block'
+                }
+            })
+        };
+        </script>
+    <title>Coconut</title>
+</head>
+<body>
+    
+    <nav>
+        <label class="logo">COCONUT</label>
+        <ul>
+            <li><a class="active" href="#">Produtos</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <div class="div-vatapa"><img src="./assets/images/receitas-de-tacaca.jpg" alt=""></div>
+            <div class="div-text-vatapa">
+                <div class="box">
+                    <h1>Vatapá</h1>
+                    <p>Vatapá é uma comida diferenciada.</p>
+                    <p>Seus ingredientes são típicos do norte e nordeste do país.</p>
+                    <p>Feito com camarão inteiro ou moído, o vatapá vai encantar você!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="widget">
+                <div class="widget-box">
+                    <img src="./assets/images/emotion.png" alt="">
+                    <h1>Muito Saboroso!</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                </div>
+            </div>
+            <div class="widget">
+                <div class="widget-box">
+                    <img src="./assets/images/healthcare.png" alt="">
+                    <h1>Melhora a Saúde!</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                </div>
+            </div>
+            <div class="widget">
+                <div class="widget-box">
+                    <img src="./assets/images/smiley.png" alt="">
+                    <h1>Elevação do Humor!</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Direitos Reservados - @scgui</p>
+    </div>    
+</body>
+</html>
