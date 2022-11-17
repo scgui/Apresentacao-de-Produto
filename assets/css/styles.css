@@ -36,6 +36,7 @@ nav ul li a {
     text-transform: uppercase;
     background-color: #fff;
     border-radius: 7px;
+    color: #000;
 }
 
 a.active,
